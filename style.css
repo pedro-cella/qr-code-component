@@ -1,0 +1,57 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+  margin: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  margin: auto;
+}
+
+div.painel {
+  background: hsl(0, 0%, 100%);
+  border-radius: 5%;
+  width: 350px;
+  height: 500px;
+}
+
+img.code {
+  width: 315px;
+  height: 300px;
+  margin-top: 15px;
+  margin-left: 18px;
+  padding: auto;
+  border-radius: 3%;
+}
+
+div.qr-code {
+  background-image: url("./images/image-qr-code.png");
+  background-repeat: repeat-y;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 25px;
+  border-radius: 5%;
+}
+
+p.catch-phrase {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+p.sub-text {
+  font-family: 'Outfit', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 10px;
+}
