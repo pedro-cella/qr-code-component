@@ -1,87 +1,78 @@
-# Frontend Mentor - QR code component
+# Frontend Mentor - QR code component solution
 
-![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
+This project works with HTML5 and CSS3 to create a page with a QR Code in it, that way you learn how to use this tools to create a simple page.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### Screenshot
 
-## The challenge
+![screenshot1](./images/screenshot1.png)
 
-Your challenge is to build out this QR code component and get it looking as close to the design as possible.
+### Links
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Solution URL: [Solution](https://pedro-cella.github.io/qr-code-component/)
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+## My process
+I divided the develpment into steps, wich are:
 
-## Where to find everything
+1- Changing the background color. This was a simple step, basically I just change the background-color of the body
+2- Creating the white panel. This step I had some problems dealing with, because I couldn't understand how to position the rectangle exactly at the center of the page, so I first understand how to change the width and height and how this changes affect the background, then i searched to how to position something in the center, and found out that using some CSS I could do it without any problem. With that in mind I could move foward in the development of the page.
+3- Adding QR Code image. Like the step before I had problems dealing with this one, specially because I was using an image, so I tried two paths, the first one I tried working with the image itself, but it was quite the challenge, because I couldn't see any change, and not only that but I was quite uncertain of how to position the image. So I started the second path, I worked with a new div, that way like I did on the step before, I changed width, height, color and found the perfect position, but when I change the background to the image, I have found a new problem, so in the end, I applied the CSS changes of the second path in the first path in other word, in the image itself, and add the margin changes so that could be exactly the same as in the design.
+4- Adding first text. This one I had trouble because of the position, after many changes I finally found it, and with that finished I could focus on the style of the text.
+5- Adding the second text. This one I knew what to do, much because of the fourth step, the challenge was in changing the transparency of the text, but it was quite easy with the rgba property in the CSS.
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+With this steps I could finish the project.
+### Built with
+- Semantic HTML5 markup
+- CSS custom properties
+### What I learned
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+I could learn more about position, specially the knowledge about when to use a div or not, other then that, I could understand more about using width and height,  properties that are actually used but I couldn't see how.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Some of my most important code parts are:
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+```html
+  <div class="painel">
+        <img src="./images/image-qr-code.png" alt="qr-code" class="code">
+        <p class="catch-phrase">Improve your front-end<br> skills by building projects</p>
+        <p class="sub-text">Scan the QR code to visit Frontend<br> Mentor and take your coding skills to<br> the next level</p>
+    </div>
+```
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+```css
+div {
+  width: 100px;
+  height: 100px;
+  
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  margin: auto;
+}
+```
+### Useful resources
 
-## Building your project
+- [Best way to center a <div> on a page vertically and horizontally?](https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally) - This helped me centralize my div.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## Author
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Name - Pedro Vítor de Salles Cella
+- Frontend Mentor - [@pedro-cella](https://www.frontendmentor.io/profile/pedro-cella)
+- Github - [pedro-cella](https://github.com/pedro-cella)
